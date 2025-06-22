@@ -16,8 +16,107 @@
     </script>
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
-    <p>Este site está hospedado no GitHub Pages e rastreia visitas no Google Analytics.</p>
+<style>
+        /* Estilos CSS básicos */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        
+        header {
+            background: #35424a;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #35424a;
+            color: #fff;
+        }
+        
+        .project {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Sou um desenvolvedor web apaixonado por criar soluções criativas e funcionais.</p>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        
+        <div class="project">
+            <h3>Site Pessoal</h3>
+            <p>Um site construído com HTML, CSS e JavaScript.</p>
+        </div>
+        
+        <div class="project">
+            <h3>App de Tarefas</h3>
+            <p>Aplicativo para gerenciamento de tarefas diárias.</p>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/seu-perfil" target="_blank">linkedin.com/seu-perfil</a></p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
     <button onclick="gtag('event', 'clique_botao', { 'event_category': 'engagement' });">
         Clique aqui (evento GA4)
     </button>
